@@ -308,19 +308,27 @@ def analysis_data_menu():
         plot_predictions(st.session_state.testY_actual2, st.session_state.testPredict2)
 
 def profile_menu():
-    st.title("Profile Penulis")
-    image = Image.open("Foto_Tatik Farihatul Farihah.jpg",)
-    st.markdown("<div style='display: flex; justify-content: center; align-items: center; '>", unsafe_allow_html=True)
-    st.image(image, width=400)
-    st.markdown("</div>", unsafe_allow_html=True)
-
-    st.write("Penulis    : Tatik Farihatul Farihah")
-    st.write("TTlahir    : Jombang, 23 Juni 2003")
-    st.write("Departemen : Statistika Bisnis, ITS")
-    st.write("")
-
-    st.write("\n\"karena hidup ini perlu dinikmati dengan cara yang Allah ridhai\"")
-    st.write("-Tatik Farihatul Farihah")
+    st.title("Profil Penulis")
+    authors = [
+        {"name": "Tatik Farihatul Farihah", "birth": "Jombang, 23 Juni 2003", "dept": "Statistika Bisnis, ITS", "image": "Foto_Tatik Farihatul Farihah.jpg"},
+        {"name": "Penulis Kedua", "birth": "Kota X, 1 Januari 2000", "dept": "Statistika Bisnis, ITS", "image": "Foto_Penulis2.jpg"},
+        {"name": "Penulis Ketiga", "birth": "Kota Y, 15 Mei 2002", "dept": "Statistika Bisnis, ITS", "image": "Foto_Penulis3.jpg"}
+    ]
+    
+    # Mengatur tata letak
+    cols = st.columns(3)
+    
+    for i, col in enumerate(cols):
+        with col:
+            image = Image.open(authors[i]["image"])
+            st.image(image, width=150)
+            st.write(f"**Nama:** {authors[i]['name']}")
+            st.write(f"**TTL:** {authors[i]['birth']}")
+            st.write(f"**Departemen:** {authors[i]['dept']}")
+            st.write("---")
+    
+    st.write("\n\"Karena hidup ini perlu dinikmati dengan cara yang Allah ridhai\"")
+    st.write("- Tatik Farihatul Farihah")
 
 # Streamlit Sidebar untuk Navigasi
 st.sidebar.title("Drawer Menu")
