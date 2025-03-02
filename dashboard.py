@@ -316,7 +316,7 @@ def profile_menu():
     ]
     
     # Mengatur tata letak
-    cols = st.coloums(3)
+    cols = st.columns(3)
     
     for i, col in enumerate(cols):
         with st.container():
