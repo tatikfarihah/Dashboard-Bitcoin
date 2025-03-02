@@ -325,9 +325,6 @@ def profile_menu():
             st.write(f"**Nama:** {authors[i]['name']}")
             st.write(f"**Departemen:** {authors[i]['dept']}")
             st.write("---")
-    
-    st.write("\n\"Karena hidup ini perlu dinikmati dengan cara yang Allah ridhai\"")
-    st.write("- Tatik Farihatul Farihah")
 
 # Streamlit Sidebar untuk Navigasi
 st.sidebar.title("Drawer Menu")
