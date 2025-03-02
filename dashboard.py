@@ -310,9 +310,9 @@ def analysis_data_menu():
 def profile_menu():
     st.title("Profil Penulis")
     authors = [
-        {"name": "Tatik Farihatul Farihah", "birth": "Jombang, 23 Juni 2003", "dept": "Statistika Bisnis, ITS", "image": "Foto_Tatik Farihatul Farihah.jpg"},
-        {"name": "Penulis Kedua", "birth": "Kota X, 1 Januari 2000", "dept": "Statistika Bisnis, ITS", "image": "Foto_Penulis2.jpg"},
-        {"name": "Penulis Ketiga", "birth": "Kota Y, 15 Mei 2002", "dept": "Statistika Bisnis, ITS", "image": "Foto_Penulis3.jpg"}
+        {"name": "Noviyanti Santoso, S.Si., M.Si., Ph.D", "dept": "Statistika Bisnis, ITS", "image": "1.png"},
+        {"name": "Fausania Hibatullah, S.Stat., M.Stat", "dept": "Statistika Bisnis, ITS", "image": "2.png"},
+        {"name": "Tatik Farihatul Farihah", "dept": "Statistika Bisnis, ITS", "image": "Foto_Tatik Farihatul Farihah.jpg"}
     ]
     
     # Mengatur tata letak
@@ -323,7 +323,6 @@ def profile_menu():
             image = Image.open(authors[i]["image"])
             st.image(image, width=150)
             st.write(f"**Nama:** {authors[i]['name']}")
-            st.write(f"**TTL:** {authors[i]['birth']}")
             st.write(f"**Departemen:** {authors[i]['dept']}")
             st.write("---")
     
