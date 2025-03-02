@@ -312,7 +312,7 @@ def profile_menu():
     authors = [
         {"name": "Noviyanti Santoso, S.Si., M.Si., Ph.D", "dept": "Statistika Bisnis, ITS", "image": "1.png"},
         {"name": "Fausania Hibatullah, S.Stat., M.Stat", "dept": "Statistika Bisnis, ITS", "image": "2.png"},
-        {"name": "Tatik Farihatul Farihah", "dept": "Statistika Bisnis, ITS", "image": "Foto_Tatik Farihatul Farihah.jpg"}
+        {"name": "Tatik Farihatul Farihah", "dept": "Statistika Bisnis, ITS", "image": "3.png"}
     ]
     
     # Mengatur tata letak
