@@ -322,7 +322,7 @@ def profile_menu():
         with col:
             image = Image.open(authors[i]["image"])
             st.image(image, width=150)
-            st.write(f"**Nama:** {authors[i]['name']}")
+            st.write(f"{authors[i]['name']}")
             st.write(f"**Departemen:** {authors[i]['dept']}")
             st.write("---")
 
