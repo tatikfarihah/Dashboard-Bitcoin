@@ -316,10 +316,10 @@ def profile_menu():
     ]
     
     # Mengatur tata letak
-    cols = st.rows(3)
+    cols = st.coloums(3)
     
     for i, col in enumerate(cols):
-        with col:
+        with st.container():
             image = Image.open(authors[i]["image"])
             st.image(image, width=150)
             st.write(f"{authors[i]['name']}")
