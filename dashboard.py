@@ -170,8 +170,8 @@ def bitcoin_info_menu():
     st.write("Aplikasi ini dirancang untuk membantu Anda memprediksi pergerakan harga Bitcoin secara efektif. Dengan memanfaatkan teknologi Long Short Term Memory Network (LSTM), aplikasi ini menganalisis faktor internal dan eksternal yang memengaruhi harga Bitcoin. Selain itu, Anda dapat memvisualisasikan tren harga historis yang mendukung pengambilan keputusan yang lebih baik.")
     st.write("Semoga aplikasi ini membantu Anda memahami dan memantau pergerakan pasar, serta mendukung kesuksesan dalam investasi kripto. Selamat menggunakan!")
 
-    st.write("Salam, ","\n Tatik Farihatul Farihah")
-    # st.write("Tatik Farihatul Farihah")
+    st.write("Salam, ","\n Penulis")
+    # st.write("Penulis")
 
 def prediksi_dashboard_menu():
     # Dashboard menggunakan Streamlit
